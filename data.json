@@ -1,0 +1,67 @@
+{
+  "faculty": [
+    {
+      "email": "cakant70@gmail.com",
+      "name": "chandrakant",
+      "sheetName": "chandrakant",
+      "teaching": true,
+      "batches": [
+        { "batch": "B1", "topic": "Java", "students": ["suraj", "tapu"] },
+        { "batch": "B2", "topic": "Java", "students": ["Achal (online)", "om"] },
+        { "batch": "B3", "topic": "Java", "students": ["Demo"] },
+        { "batch": "B4", "topic": "intro cpp", "students": ["Sanket"] },
+        { "batch": "B5", "topic": "into", "students": ["Leena", "Mansi", "Tanushree", "Rutuja", "Ruraj", "Faizan"] },
+        { "batch": "B6", "topic": "", "students": [] },
+        { "batch": "B7", "topic": "", "students": [] },
+        { "batch": "B8", "topic": "intro SQL", "students": ["Manish"] },
+        { "batch": "B9", "topic": "", "students": [] },
+        { "batch": "B10", "topic": "", "students": [] },
+        { "batch": "B11", "topic": "", "students": ["Ishwar"] },
+        { "batch": "B12", "topic": "Collection", "students": ["Chetan", "Gouri", "Ankit", "Gaurav", "Sanjay", "Kausab", "Khushalika", "Sakshi", "Shrikannt"] },
+        { "batch": "B13", "topic": "", "students": ["Rohit", "Astha", "Bhavika", "Kartik"] },
+        { "batch": "B14", "topic": "", "students": ["Swati", "Saksham", "Rohini", "Om"] }
+      ]
+    },
+    {
+      "email": "s@gmail.com",
+      "name": "shreyash",
+      "sheetName": "shreyash",
+      "teaching": true,
+      "batches": [
+        { "batch": "B1", "topic": "Python", "students": ["suraj", "tapu"] },
+        { "batch": "B2", "topic": "into", "students": ["Achal (online)", "om"] },
+        { "batch": "B3", "topic": "Java", "students": ["Demo"] },
+        { "batch": "B4", "topic": "", "students": ["Sanket"] },
+        { "batch": "B5", "topic": "", "students": ["Leena", "Mansi", "Tanushree", "Rutuja", "Ruraj", "Faizan"] },
+        { "batch": "B8", "topic": "intro SQL", "students": ["Manish"] },
+        { "batch": "B11", "topic": "", "students": ["Ishwar"] },
+        { "batch": "B12", "topic": "Collection", "students": ["Chetan", "Gouri", "Ankit", "Gaurav", "Sanjay", "Kausab", "Khushalika", "Sakshi", "Shrikannt"] },
+        { "batch": "B13", "topic": "", "students": ["Rohit", "Astha", "Bhavika", "Kartik"] },
+        { "batch": "B14", "topic": "", "students": ["Swati", "Saksham", "Rohini", "Om"] }
+      ]
+    },
+    {
+      "email": "omkarbagmare49@gmail.com",
+      "name": "omkar",
+      "sheetName": "omkar",
+      "teaching": true,
+      "batches": [
+        { "batch": "B1", "topic": "Python", "students": ["suraj", "tapu"] },
+        { "batch": "B2", "topic": "into", "students": ["Achal (online)", "om"] },
+        { "batch": "B3", "topic": "Java", "students": ["Demo"] },
+        { "batch": "B4", "topic": "", "students": ["Sanket"] },
+        { "batch": "B5", "topic": "", "students": ["Leena", "Mansi", "Tanushree", "Rutuja", "Ruraj", "Faizan"] },
+        { "batch": "B8", "topic": "intro SQL", "students": ["Manish"] },
+        { "batch": "B11", "topic": "", "students": ["Ishwar"] },
+        { "batch": "B12", "topic": "Collection", "students": ["Chetan", "Gouri", "Ankit", "Gaurav", "Sanjay", "Kausab", "Khushalika", "Sakshi", "Shrikannt"] },
+        { "batch": "B13", "topic": "", "students": ["Rohit", "Astha", "Bhavika", "Kartik"] },
+        { "batch": "B14", "topic": "", "students": ["Swati", "Saksham", "Rohini", "Om"] }
+      ]
+    }
+  ],
+
+  "nonTeaching": [
+    { "email": "chetu@gmail.com", "name": "Chetan Dada", "sheetName": "chetandada", "teaching": false },
+    { "email": "test@gmail.com", "name": "Test", "sheetName": "test", "teaching": false }
+  ]
+}

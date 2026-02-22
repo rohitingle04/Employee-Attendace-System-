@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Codeline.Ai Attendance</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <canvas id="nokey"></canvas>
+
+  <div id="fullPageLoader" style="display:none;">
+    <div class="loader-spinner"></div>
+    <p style="color:white; margin-top:10px;" id="loaderText">Processing...</p>
+  </div>
+
+  <div class="main-content-wrapper">
+    <div class="header-logo-container">
+      <img src="1678044024774.jfif" alt="Logo" class="main-logo-icon">
+      <h2 class="header-logo"><i class="fas fa-play"></i> Welcome To Codeline.Ai</h2>
+    </div>
+
+    <section id="attendanceSection" class="card zoom-card">
+      <h2 id="formTitle" style="margin-top:0; text-align: center;">QR Attendance System</h2>
+      <form id="attendanceForm">
+        <input type="text" id="name" name="name" placeholder="Enter Name" required />
+        <input type="text" id="mobile" name="mobile" placeholder="Enter Mobile Number" required />
+        <input type="email" id="email" name="email" placeholder="Enter Email" required />
+
+        <div style="display: flex; gap: 10px;">
+          <div style="flex: 1;">
+            <label style="font-size: 12px; color: #666;">Date (Auto):</label>
+            <input type="text" id="date" readonly />
+          </div>
+          <div style="flex: 1;">
+            <label style="font-size: 12px; color: #666;">Time (Auto):</label>
+            <input type="text" id="time" readonly />
+          </div>
+        </div>
+
+        <label style="font-size: 12px; color: #666;">Status:</label>
+        <input type="text" id="status" name="status" readonly />
+
+        <button type="submit" class="btn-submit">Submit Attendance</button>
+      </form>
+    </section>
+
+    <section id="topicSection" class="card zoom-card" style="display:none;">
+      <h2 class="title">Faculty Topic Update</h2>
+
+      <div style="display: flex; gap: 10px;">
+        <div style="flex: 1;">
+          <label class="label">Batch</label>
+          <input id="batchField" class="input" readonly />
+        </div>
+        <div style="flex: 1;">
+          <label class="label">Previous Topic</label>
+          <input id="previousTopic" class="input" readonly placeholder="No data" />
+        </div>
+      </div>
+
+      <label class="label">Student Type</label>
+      <select id="studentType" class="input">
+        <option value="regular">Regular Student</option>
+        <option value="new">New Student</option>
+      </select>
+      
+      <div id="regularSection">
+        <label class="label">Student List</label>
+        <input id="studentList" class="input" readonly placeholder="Fetching students..." />
+      </div>
+
+      <div id="newSection" style="display:none;">
+        <label class="label">Enter New Student Name</label>
+        <input id="newStudentName" class="input" placeholder="Enter student name" />
+      </div>
+
+      <label class="label">Topic</label>
+      <input id="newTopic" class="input" placeholder="Enter new topic" />
+
+      <div class="btn-row">
+        <button id="submitTopicBtn" class="btn-primary">Submit Topic</button>
+        <button id="skipTopicBtn" class="btn-secondary">Skip</button>
+      </div>
+    </section>
+
+    <section id="faceSection" class="card zoom-card" style="display:none; text-align:center;">
+      <h2 class="title">Security Check</h2>
+      <p id="faceMsg" style="color:#cfff04;">Verify face to mark Out-Time</p>
+      <div id="frame" style="width:250px; height:250px; border-radius:50%; overflow:hidden; margin:20px auto; border:3px solid #cfff04;">
+        <video id="video" autoplay playsinline style="width:100%; height:100%; object-fit:cover; transform: scaleX(-1);"></video>
+      </div>
+      <button id="captureBtn" class="btn-primary" disabled>Capture & Finish</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
